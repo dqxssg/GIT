@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#e3e3e3" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hdmc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:textColor="#333"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/hdjj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:textColor="#666"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/gznr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:textColor="#666"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/hdkssj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="20px"
+                android:textColor="#999"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/ryyq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="20px"
+                android:textColor="#999"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/cbdw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="20px"
+                android:textColor="#999"
+                android:textSize="20px" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="#002fa7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电影名称" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dymc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="#002fa7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评分" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="#002fa7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="上映时间" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sysj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="#002fa7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="想看人数" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xkrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"/>
+
+    <TextView
+        android:id="@+id/tc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/landiyuanjiao"
+        android:gravity="center"
+        android:text="主页"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/sr"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/yuanjiaobaidilankuang"
+                    android:gravity="center"
+                    android:hint="搜索"
+                    android:textColor="#002fa7" />
+
+                <TextView
+                    android:id="@+id/ss"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/yuanjiaobaidilankuang"
+                    android:gravity="center"
+                    android:text="搜索"
+                    android:textColor="#002fa7" />
+            </LinearLayout>
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp" />
+
+            <GridView
+                android:id="@+id/gradview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:numColumns="5"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#002fa7"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#002fa7"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                app:tabIndicatorColor="#002fa7"
+                app:tabIndicatorHeight="2dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#002fa7"
+                app:tabTextColor="@color/black" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

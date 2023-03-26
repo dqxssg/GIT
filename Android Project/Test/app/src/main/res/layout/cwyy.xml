@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="宠物种类" />
+
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="我的问诊" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:text="问诊案例" />
+
+            <ListView
+                android:id="@+id/listview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

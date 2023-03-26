@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_ss" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp" />
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:numColumns="5"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/line0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image0"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/text0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:ellipsize="end"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scrollbarSize="18dp"
+                app:tabIndicatorColor="#ffa500"
+                app:tabIndicatorHeight="2dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#ffa500"
+                app:tabTextColor="#000000" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

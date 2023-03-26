@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_back" />
+
+    <TextView
+        android:id="@+id/sf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/chengdiyuanjiao"
+        android:gravity="center"
+        android:text="水费"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/df"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/chengdiyuanjiao"
+        android:gravity="center"
+        android:text="电费"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/sf" />
+
+    <TextView
+        android:id="@+id/hhgl_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/chengdiyuanjiao"
+        android:gravity="center"
+        android:text="户号管理"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/df"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <TextView
+        android:id="@+id/zdjf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="自动缴费"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/zj" />
+
+    <TextView
+        android:id="@+id/zj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="|"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/zdjf"
+        app:layout_constraintRight_toLeftOf="@+id/hhgl" />
+
+    <TextView
+        android:id="@+id/hhgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="户号管理"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/zj"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

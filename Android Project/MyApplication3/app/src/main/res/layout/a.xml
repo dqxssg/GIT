@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_fz" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="10dp" />
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:numColumns="5"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="热门主题"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="#002fa7"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="#002fa7"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:scrollbars="none">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:tabIndicatorColor="#002fa7"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="#002fa7"
+                    app:tabTextColor="@color/black" />
+            </HorizontalScrollView>
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="10dp"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

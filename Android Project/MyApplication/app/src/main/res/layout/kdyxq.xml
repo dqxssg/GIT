@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#e3e3e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="20px"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:textColor="#333"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/pf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:textColor="#666"
+                android:textSize="22px" />
+
+            <TextView
+                android:id="@+id/sysj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:textColor="#999"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/xkrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:textColor="#999"
+                android:textSize="20px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20px"
+        android:background="@drawable/yuanjiaolandibiankuang"
+        android:gravity="center"
+        android:text="主页"
+        android:textColor="#333"
+        android:textSize="26px" />
+</LinearLayout>

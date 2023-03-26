@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原密码："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/ymm"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:hint="请输入原密码"
+            android:paddingStart="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新密码："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/xmm1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:hint="请输入新密码"
+            android:paddingStart="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新密码："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/xmm2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:hint="请再次输入新密码"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/chengdiyuanjiao"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>

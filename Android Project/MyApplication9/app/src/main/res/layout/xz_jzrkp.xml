@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="姓\u3000\u3000名：" />
+
+        <EditText
+            android:id="@+id/xm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="性\u3000\u3000别：" />
+
+        <EditText
+            android:id="@+id/xb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="身份证号：" />
+
+        <EditText
+            android:id="@+id/sfzh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:paddingStart="10dp"
+            android:text="371402199902041133" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="出生日期：" />
+
+        <EditText
+            android:id="@+id/csrq"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="2010-2-7"
+            android:background="@drawable/baidiyuanjiao"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="联系电话：" />
+
+        <EditText
+            android:id="@+id/lxdh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="地\u3000\u3000址：" />
+
+        <EditText
+            android:id="@+id/dz"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:paddingStart="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/qd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/chengdiyuanjiao"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:text="公司名称：" />
+
+            <TextView
+                android:id="@+id/gsmc"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent"
+                android:text="运单号：" />
+
+            <TextView
+                android:id="@+id/ydh"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="投诉类型：" />
+
+            <Spinner
+                android:id="@+id/spring"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:text="投诉内容：" />
+
+            <EditText
+                android:id="@+id/tsnr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:background="@drawable/yuanjiaobaidikuang"
+                android:hint="请输入投诉内容" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tj"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/yuanjiaolandibiankuang"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+</LinearLayout>

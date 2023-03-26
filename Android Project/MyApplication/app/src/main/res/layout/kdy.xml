@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back_fz" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#e3e3e3" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20px" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:divider="@null"
+                android:dividerHeight="20px"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/ckgd"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="26px"
+                android:textColor="#999"
+                android:visibility="visible"
+                android:text="查看更多" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

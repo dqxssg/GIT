@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="基本信息"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="用户昵称："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/yhnc"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="邮\u3000\u3000箱："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/yx"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="电话号码："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/dhhm"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="性\u3000\u3000别："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/xb"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="求职信息"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="工作经验："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/gzjy"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="最高学历："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/zgxl"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="现居住地："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/xjzd"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="期望职位："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/qwzw"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="期望薪资："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:id="@+id/qwxz"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="教育经历："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/jyjl"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="个人简历："
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/grjl"
+                        android:background="@drawable/yuanjiaobaidikuang"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#f1f1f1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/yuanjiaolandibiankuang"
+                android:gravity="center"
+                android:text="修改"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

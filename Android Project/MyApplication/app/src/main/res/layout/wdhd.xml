@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#e3e3e3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ybm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已报名"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/ywc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已完成"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/yqx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已取消"
+            android:textSize="26px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="XXX"
+        android:textColor="#333"
+        android:textSize="26px" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication8"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.A_XQ" />
+        <activity android:name=".ui.A_SS" />
+        <activity android:name=".ui.DDLB" />
+        <activity android:name=".ui.DDLB_XQ" />
+        <activity android:name=".ui.GRXX" />
+        <activity android:name=".ui.XGMM" />
+        <activity android:name=".ui.YJFK" />
+        <activity android:name=".ui.B_FW" />
+        <activity android:name=".ui.D_XWXQ" />
+        <activity android:name=".ui.DTCX" />
+        <activity android:name=".ui.DTCX_XQ" />
+    </application>
+
+</manifest>

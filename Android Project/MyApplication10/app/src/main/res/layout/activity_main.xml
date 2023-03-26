@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/zy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/image2"
+        app:layout_constraintTop_toBottomOf="@+id/vp2" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/qbfw"
+        app:layout_constraintLeft_toRightOf="@+id/image1"
+        app:layout_constraintRight_toLeftOf="@+id/image3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp2" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/hd"
+        app:layout_constraintLeft_toRightOf="@+id/image2"
+        app:layout_constraintRight_toLeftOf="@+id/image4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp2" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/xw"
+        app:layout_constraintLeft_toRightOf="@+id/image3"
+        app:layout_constraintRight_toLeftOf="@+id/image5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp2" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/grzx"
+        app:layout_constraintLeft_toRightOf="@+id/image4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp2" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主页"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@+id/image1"
+        app:layout_constraintCircleRadius="-25dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部服务"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@+id/image2"
+        app:layout_constraintCircleRadius="-25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="智慧党建"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@+id/image3"
+        app:layout_constraintCircleRadius="-25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image3" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新闻"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@+id/image4"
+        app:layout_constraintCircleRadius="-25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人中心"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@+id/image5"
+        app:layout_constraintCircleRadius="-25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

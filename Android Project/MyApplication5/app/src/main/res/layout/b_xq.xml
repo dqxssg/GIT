@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/zw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/fbr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:gravity="end"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/fbsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="10dp"
+                    android:gravity="end"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#f0f0f0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/plsr"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/baidiyuanjiao"
+                        android:gravity="center"
+                        android:hint="评论"
+                        android:maxLength="30"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:id="@+id/plan"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/landiyuanjiao"
+                        android:gravity="center"
+                        android:text="评论"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

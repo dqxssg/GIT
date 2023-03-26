@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="昵\u3000\u3000称："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/nc"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="性\u3000\u3000别："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radiobutton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="18dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="联系电话："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/lxdh"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="身份证号："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/sfzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#f0f0f0" />
+
+    <TextView
+        android:id="@+id/xg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/landiyuanjiao"
+        android:gravity="center"
+        android:text="修改"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</LinearLayout>

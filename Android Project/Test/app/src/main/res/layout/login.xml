@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="用户名："
+            android:textColor="#002fa7"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/yhm"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/yuanjiaobaidilankuang"
+            android:gravity="center"
+            android:hint="请输入用户名" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="密\u3000码："
+            android:textColor="#002fa7"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/mm"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/yuanjiaobaidilankuang"
+            android:gravity="center"
+            android:hint="请输入密码" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/yuanjiaolandibiankuang"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+</LinearLayout>

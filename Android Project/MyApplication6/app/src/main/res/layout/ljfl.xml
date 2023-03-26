@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ss"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chengdiyuanjiao"
+                    android:gravity="center"
+                    android:text="搜索" />
+
+                <TextView
+                    android:id="@+id/fl"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chengdiyuanjiao"
+                    android:gravity="center"
+                    android:text="分类" />
+            </LinearLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scrollbars="vertical"
+                app:tabIndicatorColor="#ffa500"
+                app:tabIndicatorHeight="2dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#ffa500"
+                app:tabTextColor="#000000" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

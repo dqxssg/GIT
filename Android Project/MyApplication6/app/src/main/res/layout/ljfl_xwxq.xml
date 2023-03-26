@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/zw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/fbr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/sj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/plsr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/baidiyuanjiao"
+            android:hint="请输入评论"
+            android:maxLength="30"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <TextView
+            android:id="@+id/plan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/chengdiyuanjiao"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

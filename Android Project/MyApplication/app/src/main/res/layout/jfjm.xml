@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back_add" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#e3e3e3" />
+
+    <TextView
+        android:id="@+id/yys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20px"
+        android:textColor="#666"
+        android:textSize="26px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuanjiaolandibiankuang"
+                android:padding="26px"
+                android:text="五十元"
+                android:textColor="#333"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="22px"
+                android:text="50元"
+                android:textColor="#666"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuanjiaolandibiankuang"
+                android:padding="26px"
+                android:text="一百元"
+                android:textColor="#333"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="22px"
+                android:text="100元"
+                android:textColor="#666"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuanjiaolandibiankuang"
+                android:padding="26px"
+                android:text="二百元"
+                android:textColor="#333"
+                android:textSize="26px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="22px"
+                android:text="200元"
+                android:textColor="#666"
+                android:textSize="22px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#666" />
+
+    <TextView
+        android:id="@+id/qzf"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20px"
+        android:background="@drawable/yuanjiaolandibiankuang"
+        android:gravity="center"
+        android:text="去支付"
+        android:textColor="#333"
+        android:textSize="26px" />
+
+</LinearLayout>

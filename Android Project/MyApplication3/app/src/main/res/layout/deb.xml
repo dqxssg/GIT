@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/xs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="20dp" />
+            <DatePicker
+                android:id="@+id/datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TimePicker
+                android:id="@+id/timepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:timePickerMode="spinner" />
+            <TextView
+                android:id="@+id/xyb"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/yuanjiaolandibiankuang"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/fh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/yuanjiaolandibiankuang"
+                android:gravity="center"
+                android:text="返回上一级目录"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

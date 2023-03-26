@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/sr"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/yuanjiaobaidilankuang"
+                        android:gravity="center"
+                        android:textColor="#002fa7" />
+
+                    <TextView
+                        android:id="@+id/ss"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/yuanjiaobaidilankuang"
+                        android:gravity="center"
+                        android:text="搜索"
+                        android:textColor="#002fa7" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp" />
+
+                    <TextView
+                        android:id="@+id/gsmc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:textColor="#002fa7" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ddrx" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#A0A0A0" />
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:divider="@null"
+                    android:dividerHeight="10dp"
+                    android:scrollbars="none" />
+
+                <TextView
+                    android:id="@+id/tx"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/yuanjiaolandibiankuang"
+                    android:gravity="center"
+                    android:text="物流投诉"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

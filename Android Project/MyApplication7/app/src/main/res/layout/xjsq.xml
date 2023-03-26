@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标\u3000\u3000题：\u3000"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/bt"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/baidiyuanjiao" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="诉求内容：\u3000"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/sqnr"
+            android:paddingStart="10dp"
+            android:background="@drawable/baidiyuanjiao" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/add" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="承办单位：\u3000"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="10dp"
+            android:id="@+id/cbdw"
+            android:background="@drawable/baidiyuanjiao" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="反馈手机号："
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:paddingStart="10dp"
+            android:id="@+id/fksjh"
+            android:layout_height="50dp"
+            android:background="@drawable/baidiyuanjiao" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/chengdiyuanjiao"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+</LinearLayout>
