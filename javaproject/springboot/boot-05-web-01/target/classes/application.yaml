@@ -1,0 +1,22 @@
+#spring:
+#  mvc:
+#    hiddenmethod:
+#      filter:
+#        enabled: true
+    #内容协商
+#    contentnegotiation:
+#      favor-parameter: true #开启请求参数内容协商
+    #添加态资源前缀
+    #    static-path-pattern: /res/**
+    #选择开启配置DELETE、PUT等请求
+  #    hiddenmethod:
+  #      filter:
+  #        enabled: true
+  #禁用所有静态资源
+  #  resources:
+  #    add-mappings:false
+  #更改静资源文件夹
+#  resources:
+#    static-locations:
+#      [classpath: /文件夹名/]
+

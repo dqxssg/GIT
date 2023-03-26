@@ -1,0 +1,12 @@
+org\example\web\AddServlcet.class
+org\example\mapper\BrandMapper.class
+org\example\service\BrandService.class
+org\example\BaseServlet.class
+org\example\web\updateServlce.class
+org\example\web\selectAllServlet.class
+org\example\web\selectByIdServlet.class
+org\example\util\SqlSessionFactoryUtils.class
+org\example\BrandServlet.class
+org\example\web\deleteServlcet.class
+org\example\pojo\Brand.class
+org\example\web\listener\ContextLoaderListener.class

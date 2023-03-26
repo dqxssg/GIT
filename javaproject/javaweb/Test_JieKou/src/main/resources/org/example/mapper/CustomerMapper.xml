@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.CustomerMapper">
+    <resultMap id="ResultMap" type="customer">
+        <result column="Name" property="name"></result>
+        <result column="Telephone" property="telephone"></result>
+        <result column="WorkUnit" property="workunit"></result>
+        <result column="IdNumber" property="idnumber"></result>
+        <result column="Facsimile" property="facsimile"></result>
+        <result column="Address" property="address"></result>
+        <result column="Remarks" property="remarks"></result>
+    </resultMap>
+</mapper>

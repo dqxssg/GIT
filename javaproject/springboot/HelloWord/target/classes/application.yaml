@@ -1,0 +1,19 @@
+#单引号会转义，双引号不会转义
+person:
+  username: zhangsan
+  boss: true
+  birth: 2000/1/1
+  age: 18
+  pet:
+    name: 小猫
+  interests: [足球，篮球]
+  animal:
+    - 小猫
+    - 小狗
+  score: {英:100,语:100}
+  salarys: [100,90]
+  allPets:
+    sick:
+      - {name:小猫}
+    health:
+      - name:小狗

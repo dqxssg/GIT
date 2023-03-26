@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>使用th:field属性</title>
+</head>
+<body>
+<form>
+  <input type="text" id="name1" name="name" value="小红" />
+  <input type="text" id="name" name="name" value="小红" />
+  <input type="text" id="name" name="name" value="小红" />
+  <textarea id="name" name="name">小红</textarea>
+  <textarea id="name" name="name">小红</textarea>
+  <select id="sex" name="sex">
+    <option value="0" selected="selected">女</option>
+    <option value="1">男</option>
+  </select>
+  <select id="sex" name="sex">
+    <option value="0" selected="selected">女</option>
+    <option value="1">男</option>
+  </select>
+  <input type="checkbox" value="*{name}" id="name1" name="name"/><input type="hidden" name="_name" value="on"/>
+  <input type="checkbox" value="*{name}" id="name2" name="name"/><input type="hidden" name="_name" value="on"/>
+  <input type="radio" value="*{name}" id="name3" name="name"/>
+  <input type="radio" value="*{name}" id="name4" name="name"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <link href="css/login.css" rel="stylesheet">
+</head>
+<body>
+<div class="form-div">
+    <div class="reg-content">
+        <h1>欢迎注册</h1>
+        <span>已有帐号？</span><a href="login.html">登录</a>
+    </div>
+    <form id="reg-form" action="/Setvlet/reginsterSetvlet" method="post"></form>
+    <table>
+        <tr>
+            <td>用户名</td>
+            <td class="inputs">
+                <input name="username" type="text" id="username"><br>
+                <span id="username_err" class="err_msg" style="...">用户名不太受欢迎</span>
+            </td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td class="inputs">
+                <input name="password" type="text" id="password"><br>
+                <span id="password_err" class="err_msg" style="...">密码格式错误</span>
+            </td>
+        </tr>
+    </table>
+    <div class="button">
+        <input value="注册" type="submit" id="reg_btn">
+    </div>
+    <br class="clear">
+</div>
+</body>
+</html>

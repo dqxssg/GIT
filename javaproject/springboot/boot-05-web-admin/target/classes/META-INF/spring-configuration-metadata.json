@@ -1,0 +1,26 @@
+{
+  "groups": [
+    {
+      "name": "management.endpoint.my-service-end-point",
+      "type": "com.example.boot05webadmin.acutuator.endpoint.MyServiceEndPoint",
+      "sourceType": "com.example.boot05webadmin.acutuator.endpoint.MyServiceEndPoint"
+    }
+  ],
+  "properties": [
+    {
+      "name": "management.endpoint.my-service-end-point.cache.time-to-live",
+      "type": "java.time.Duration",
+      "description": "Maximum time that a response can be cached.",
+      "sourceType": "com.example.boot05webadmin.acutuator.endpoint.MyServiceEndPoint",
+      "defaultValue": "0ms"
+    },
+    {
+      "name": "management.endpoint.my-service-end-point.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable the myServiceEndPoint endpoint.",
+      "sourceType": "com.example.boot05webadmin.acutuator.endpoint.MyServiceEndPoint",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}

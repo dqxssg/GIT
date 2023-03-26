@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:39:10 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 500 2693 http-bio-8080-exec-2 420
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:39:20 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 500 4512 http-bio-8080-exec-4 184
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:39:35 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 500 4512 http-bio-8080-exec-6 7
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:39:37 +0800] "POST /Test_JieKou/customerUpdateServlet HTTP/1.1" 405 1065 http-bio-8080-exec-8 1
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:40:44 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 500 4512 http-bio-8080-exec-2 583
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:43:49 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 500 2801 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:44:13 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 500 4176 http-bio-8080-exec-6 21
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:55:02 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 500 4176 http-bio-8080-exec-2 713
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:55:14 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 500 1849 http-bio-8080-exec-3 4
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:55:14 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:56:31 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 200 3 http-bio-8080-exec-2 557
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:56:48 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 500 4512 http-bio-8080-exec-3 20
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:57:10 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 200 3 http-bio-8080-exec-5 9
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:16:58:03 +0800] "GET /Test_JieKou/customerUpdateServlet HTTP/1.1" 200 3 http-bio-8080-exec-6 3
+0:0:0:0:0:0:0:1 - - [13/Feb/2023:17:04:15 +0800] "GET /Test_JieKou/customerDeleteByIdServlet HTTP/1.1" 200 3 http-bio-8080-exec-2 639

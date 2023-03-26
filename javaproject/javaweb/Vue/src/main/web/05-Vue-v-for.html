@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <div v-for="addr in addrs">
+        {{addr}}<br>
+    </div>
+    <hr>
+    <!--    添加序号-->
+    <div v-for="(i,addr) in addrs">
+        {{i + 1}}、{{addr}}<br>
+    </div>
+</div>
+<script src="js/vue.js"></script>
+<script>
+    // 1、创建Vue核心
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+                addrs: ["山东", "河北", "北京"]
+            }
+        }
+    });
+</script>
+</body>
+</html>

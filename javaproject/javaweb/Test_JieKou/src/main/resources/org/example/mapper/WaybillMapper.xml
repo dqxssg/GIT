@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.WaybillMapper">
+    <resultMap id="ResultMap" type="waybill">
+        <result column="Username" property="username"></result>
+        <result column="Password" property="password"></result>
+        <result column="TrackingNumber" property="trackingnumber"></result>
+        <result column="ProductName" property="productname"></result>
+        <result column="VehicleType" property="vehicletype"></result>
+        <result column="CarNumber" property="carnumber"></result>
+        <result column="DeliveryDate" property="deliverydate"></result>
+        <result column="Shipper" property="shipper"></result>
+        <result column="Consignee" property="consignee"></result>
+        <result column="DeliveryStation" property="deliverystation"></result>
+        <result column="ReceivingStation" property="recrivingstation"></result>
+        <result column="weight" property="weight"></result>
+        <result column="RailwayFreight" property="railwayfreight"></result>
+        <result column="AutomobileFreight" property="automobilefreight"></result>
+        <result column="ServiceCharge" property="servicecharge"></result>
+        <result column="ShippingFreight" property="shippingfreight"></result>
+        <result column="StorageCharge" property="storagecharge"></result>
+        <result column="CleaningCharge" property="cleaningcharge"></result>
+        <result column="DiscountAmount" property="discountamount"></result>
+        <result column="state" property="username"></result>
+    </resultMap>
+</mapper>

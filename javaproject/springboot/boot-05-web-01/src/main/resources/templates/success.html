@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:test="${code}">Thymelelaf</h1>
+<h2>
+    <a href="https://www.sohu.com/" th:href="${link}">跳1</a>
+    <a href="https://www.sohu.com/" th:href="@{link}">跳2</a>
+</h2>
+
+</body>
+</html>
