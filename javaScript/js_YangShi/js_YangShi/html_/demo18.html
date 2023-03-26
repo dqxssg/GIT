@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组去重</title>
+    <!--    把旧数组里面不重复的元素选取出来放到新的数组中，重复的元素保留一个放到新的数组-->
+    <script>
+        function unique(arr) {
+            let newarr = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (newarr.indexOf(arr[i]) === -1) {
+                    newarr.push(arr[i]);
+                }
+            }
+            console.log(newarr);
+        }
+
+        unique([1, 2, 3, 4, 5, 1, 2, 3, 4, 5])
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改元素内容</title>
+    <!--<img src="" alt="" title="鼠标放到图片上面显示的文字">-->
+
+</head>
+<body>
+<button id="btn1">活动1</button>
+<button id="btn2">活动2</button>
+<br>
+<img src="../img/hd1.png" alt="" title="活动1">
+<script>
+    let btn1 = document.getElementById('btn1');
+    let btn2 = document.getElementById('btn2');
+    let image = document.querySelector('img');
+    btn2.onclick = function () {
+        image.src = '../img/hd2.png';
+        image.title = '活动2';
+    }
+    btn1.onclick = function () {
+        image.title = '活动1';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点（操作第一个子元素和最后一个子元素）</title>
+    <!--Element.firstChild-->
+    <!--    返回第一个子元素找不到返回null-->
+    <!--    第一个子节点，包括所有的节点（文本节点、元素节点等）-->
+    <!--Element.lastChild，返回最后一个子元素找不到返回null-->
+
+    <!--以下两种有兼容性问题（ie9以上支持）-->
+    <!--    Element.firstElementChild;-->
+    <!--    Element.lastElementChild;-->
+</head>
+<body>
+<ol>
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+    <li>li4</li>
+    <li>li5</li>
+</ol>
+<script>
+    // 返回第一个和最后一个子节点（包括文本节点、元素节点）
+    let ol = document.querySelector('ol');
+    let firstChild = ol.firstChild;
+    console.log(firstChild);
+    let lastChild = ol.lastChild;
+    console.log(lastChild);
+    // 返回第一个和最后一个元素节点（但是有兼容性问题）（ie9以上支持）
+    let firstElementChild = ol.firstElementChild;
+    console.log(firstElementChild);
+    let lastElementChild = ol.lastElementChild;
+    console.log(lastElementChild);
+    // 实际开发，没有兼容性问题还能返回第一个和最后一个子元素
+    let first = ol.children[0];
+    console.log(first);
+    let last = ol.children[ol.children.length - 1];
+    console.log(last);
+</script>
+</body>
+</html>

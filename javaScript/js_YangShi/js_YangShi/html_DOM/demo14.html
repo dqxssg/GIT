@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H5自定义属性</title>
+    <!--    H5规定自定义属性data-开头的为属性名并且赋值-->
+    <!--H5新增的获取自定义属性的方法，只能获取data-开头的自定义属性（IE11及以上支持）-->
+    <!--    dataset是一个集合里面存放了所有的以data开头的自定义属性-->
+    <!--    Element.dataset.自定义属性名-->
+    <!--    Element.dataset['自定义属性名']-->
+    <!--如果之定义属性名为（驼峰命名法）：dataset-xx-xx，或多个-链接单词的运用驼峰命名法-->
+    <!--Element.dataset.xxXx-->
+    <!--Element.dataset['xxXx']-->
+    <style>
+    </style>
+</head>
+<body>
+<div data-time="20" data-t-name="JiEmony"></div>
+<script>
+    let divElement = document.querySelector('div');
+    console.log("1：" + divElement.getAttribute('data-time'));
+    console.log("2：" + divElement.getAttribute('data-t-name'));
+    console.log("3：" + divElement.dataset.time);
+    console.log("4：" + divElement.dataset.tName);
+    console.log("5：" + divElement.dataset['time']);
+    console.log("6：" + divElement.dataset['tName']);
+</script>
+</body>
+</html>

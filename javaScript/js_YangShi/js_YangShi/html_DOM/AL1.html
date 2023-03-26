@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例1</title>
+    <!--    根据打开的时间显示问候语-->
+</head>
+<body>
+<img src="../img/hd1.png" alt="">
+<div>上午</div>
+<script>
+    let htmlImageElement = document.querySelector('img');
+    let htmlDivElement = document.querySelector('div');
+    let date = new Date();
+    let hours = date.getHours();
+    if (hours < 12) {
+        htmlDivElement.innerHTML = '上午';
+        htmlImageElement.src='../img/hd2.png';
+    } else if (hours < 18) {
+        htmlDivElement.innerHTML = '下午';
+        htmlImageElement.src='../img/hd2.png';
+    } else {
+        htmlDivElement.innerHTML = '晚上';
+        htmlImageElement.src='../img/hd1.png';
+    }
+</script>
+</body>
+</html>

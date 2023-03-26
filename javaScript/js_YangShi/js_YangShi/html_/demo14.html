@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建数组和判断是否时数组</title>
+    <script>
+        // 1、利用数组字面量
+        let arr = [1, 2, 3];
+        console.log(arr);
+        // 2、利用new Array()
+        let arr1 = new Array(2)//表述arr1长度为2
+        let arr2 = new Array(2, 3)//等价于[2,3]
+        console.log(arr1)
+        console.log(arr2)
+        // 检测是否为数组,利用instanceof
+        let arr3 = [];
+        let obj = {};
+        console.log(arr3 instanceof Array);//true
+        console.log(obj instanceof Array);//false
+        // 检测是否为数组,利用Array.isArray(数组名)
+        console.log(Array.isArray(arr3));//true
+        console.log(Array.isArray(obj));//false
+    </script>
+</head>
+<body>
+
+</body>
+</html>

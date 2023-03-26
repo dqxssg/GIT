@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数</title>
+    <!--    声明函数，方法一，关键字function-->
+    <!--语法：    function 函数名(){}-->
+    <!--    调用函数，函数名();-->
+
+    <!--    声明函数，方法二-->
+    <!--语法：    var 变量名=function(){}-->
+    <!--    调用函数，变量名();-->
+
+    <!--    arguments,里面存储了所有的传递过来的实参-->
+    <!--    arguments,伪数组-->
+    <!--    只有函数有arguments，而且是每个函数都内置-->
+    <script>
+        function get() {
+            console.log(arguments);
+        }
+
+        function getMath(num1, num2) {
+            alert(num1 + num2);
+            return num1 + num2;
+        }
+
+        let m = getMath(1, 'a');
+        alert(m);
+        get(1, 2, 3, 4);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

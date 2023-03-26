@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelector(),querySelectorAll()</title>
+
+</head>
+<body>
+<div>
+    <div class="box">盒子</div>
+    <div class="box">菏泽</div>
+    <div id="nav">
+        <ul>
+            <li>知否</li>
+            <li>粥否</li>
+        </ul>
+    </div>
+</div>
+<script>
+    // 有的版本不支持这种方法
+    //querySelector()，返回指定选择器的第一个元素对象，只能返回一个
+    let elementById = document.querySelector('.box');
+    console.log(elementById);
+    let elementById1 = document.querySelector('#nav');
+    console.log(elementById1);
+    let elementById2 = document.querySelector('li');
+    console.log(elementById2);
+    //querySelectorAll()，返回指定选择器的所有元素对象集合
+    let elementById3 = document.querySelectorAll('.box');
+    console.log(elementById3);
+</script>
+
+</body>
+</html>

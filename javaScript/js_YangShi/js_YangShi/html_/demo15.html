@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加删除数组元素的方法</title>
+    <script>
+        // 1、push()，在数组结尾添加一个或多个元素，push()完毕会返回新数组长度
+        let arr = [1, 2, 3];
+        arr.push(4);
+        let number = arr.push(5, 'zhangsan');
+        console.log('number:' + number);
+        console.log(arr);
+        // 2、unshift()，在数组开头添加一个或多个元素，unshift()完毕会返回新数组长度
+        let number1 = arr.unshift('lisi', 'wangwu');
+        console.log('number1:' + number1);
+        console.log(arr);
+        // 3、pop()，删除最后一个元素，pop()完毕返回删除的元素
+        let number2 = arr.pop();
+        console.log('number2:' + number2);
+        console.log(arr);
+        // 4、shift()，删除第一个元素，shift()完毕返回删除的元素
+        let number3 = arr.shift();
+        console.log('number3:' + number3);
+        console.log(arr);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

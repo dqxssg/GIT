@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件高级（事件委托）（代理、委派）</title>
+    <!--    事件委派也成为事件代理，在jQuery里面称为事件委派-->
+    <!--    原理：不是每个子节点单独设置事件监听器，而是事件监听器设置在其父节点上，然后利用冒泡原理影响设置的每个子节点-->
+    <!--    作用：只操作一次DOM提高了程序的性能-->
+    <!--常见的属性和方法-->
+    <!--    事件对属性方法                       说明-->
+    <!--    e.target                           返回触发事件的对象（标准）-->
+    <!--    e.srcElement                       返回触发事件的对象（非标准，IE6-8使用）-->
+    <!--    e.type                             返回事件类型，比如：click（不带on）-->
+    <!--    e.cancelBubble                     阻止冒泡（非标准，IE6-8使用）-->
+    <!--    e.returnValue                      阻止默认事件（默认事件）（非标准，IE6-8使用，比如不让链接跳转）-->
+    <!--    e.preventDefault()                 阻止默认事件（默认事件）（标准，比如不让链接跳转）-->
+    <!--    e.stopPropagation()                阻止冒泡（标准）-->
+    <style>
+        .father {
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: pink;
+            text-align: center;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            background-color: purple;
+            line-height: 200px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>知否知否，粥否州府</li>
+    <li>知否知否，粥否州府</li>
+    <li>知否知否，粥否州府</li>
+</ul>
+<script>
+    // 事件委托的核心原理：给父节点添加监听器，利用事件的冒泡影响每一个子节点
+    let ul = document.querySelector('ul');
+    let lis = document.querySelectorAll('li');
+    ul.addEventListener('click', function (e) {
+        alert('知否知否，粥否州府')
+        e.target.style.backgroundColor = 'pink';
+    })
+</script>
+</body>
+</html>

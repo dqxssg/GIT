@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布留言</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 100px;
+        }
+
+        textarea {
+            width: 200px;
+            height: 100px;
+            border: 1px solid pink;
+            outline: none;
+            resize: none;
+        }
+
+        ul {
+            margin-top: 50px;
+        }
+
+        li {
+            width: 300px;
+            padding: 5px;
+            background-color: rgb(245, 209, 243);
+            color: red;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        li a {
+            float: right;
+        }
+    </style>
+</head>
+<body><textarea name="" id=""></textarea>
+<button>发布</button>
+<ul>
+</ul>
+<script>
+    // 获取元素
+    let button = document.querySelector('button');
+    let text = document.querySelector('textarea');
+    let ul = document.querySelector('ul');
+    // 注册事件
+    button.onclick = function () {
+        if (text.value == '') {
+            alert('请输入内容')
+            return false;
+        } else {
+            console.log(text.value);
+            //创建元素
+            let lis = document.createElement('li');
+            // 给lis进行赋值（现有lis再赋值）
+            lis.innerHTML = text.value + "<a href='javascript:;'>删除</a>";
+            //添加元素
+            // ul.appendChild(lis); //添加到后面
+            ul.insertBefore(lis, ul.children[0]); //添加到前面
+            text.value = '';
+            //删除li
+            let as = document.querySelectorAll('a');
+            for (let i = 0; i < as.length; i++) {
+                as[i].onclick = function () {
+                    ul.removeChild(this.parentNode);
+                }
+            }
+        }
+
+    }
+
+</script>
+</body>
+</html>

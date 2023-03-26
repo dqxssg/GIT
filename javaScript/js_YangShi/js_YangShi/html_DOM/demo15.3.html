@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点（创建节点、添加节点）</title>
+    <!--document.createElement('tagName')方法创建由tagName指定Html元素，因为这些元素原先不存在，-->
+    <!--    是根据我们的需求动态生成的，所以我们也称为动态创建元素节点-->
+    <!--node.appendChild(child)方法将一个节点添加到指定父节点列表的末尾（类似css中的after伪数组，或者数组中的push）-->
+    <!--    node，父级-->
+    <!--    child，子级-->
+    <!--node.insertBefore(child, 指定元素)方法将一个节点添加到父节点的指定子节点前面（类似css中的before为元素）-->
+</head>
+<body>
+<ul>
+    <li>123</li>
+</ul>
+<script>
+    let ul = document.querySelector('ul');
+    let li1 = document.createElement('li');
+    let li = document.createElement('li');
+    ul.appendChild(li);
+    ul.insertBefore(li1, ul.children[0]);
+</script>
+</body>
+</html>

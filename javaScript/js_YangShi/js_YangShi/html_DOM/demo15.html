@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点</title>
+    <!--    DOM树中节点的层级关系（父子兄层级关系），父级节点node.parentNode-->
+    <!--    父级节点node.parentNode-->
+    <!--    子节点parentNode.childNodes（标准）（一般不提倡使用），包含元素节点、文本节点等等，返回包含指定的节点的子节点的集合，该集合为及时更新的集合-->
+    <!--    子节点parentNode.children（非标准）（掌握，浏览器都支持），是一个只读属性，返回所有的子元素节点，子返回元素节点，其余不返回-->
+    <!--文档-->
+    <!--   根元素（<HTML>）-->
+    <!--      元素（<head>）-->
+    <!--         元素(<title>)-->
+    <!--            文本（"文档标题"）-->
+    <!--      元素（<body>）-->
+    <!--         元素（<a>）-->
+    <!--               属性（href）-->
+    <!--               文本（"我的链接"）-->
+    <!--            元素（<h1>）-->
+    <!--               文本（"我的标题"）-->
+
+    <!--    节点至少拥有nodeType（节点类型）、nodeName（节点名称）、nodeValue（节点值），这三个属性-->
+    <!--    元素节点nodeType为1（主要）-->
+    <!--    属性节点nodeType为2-->
+    <!--    文本节点nodeType为3（文本节点包括文字、空格、换行等等）-->
+</head>
+<body>
+<div>我是div</div>
+<span>我是span</span>
+<ul>
+    <li>我是li</li>
+    <li>我是li</li>
+    <li>我是li</li>
+</ul>
+<ol>
+    <li>我是li</li>
+    <li>我是li</li>
+    <li>我是li</li>
+</ol>
+<div class="demo">
+    <div class="box">
+        <span class="erwerma">x</span>
+    </div>
+</div>
+<script>
+    // 父级节点node.parentNode
+    let erweima = document.querySelector('.erwerma');
+    // document.querySelector('.box')和erweima.parentNode获取的一样（得到的是距离元素最近的父级节点，如果找不到父节点就返回为null）;
+    let box = erweima.parentNode;
+    console.log(box)
+    console.log('==============================')
+    // DOM提供的方法（API）获得
+    let ul = document.querySelector('ul');
+    let lis = ul.querySelectorAll('li');
+    console.log(lis)
+    console.log('==============================')
+    // 子节点
+    let lis1 = ul.childNodes;
+    console.log(lis1)
+    // 循环返回元素节点
+    for (let i = 0; i < lis1.length; i++) {
+        // 1表示元素节点
+        if (lis1[i].nodeType == 1) {
+            console.log(lis1[i]);
+        }
+    }
+    let lis2 = ul.children;
+    console.log(lis2);
+
+
+</script>
+</body>
+</html>

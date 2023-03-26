@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串操作方法</title>
+    <!--    concat(arr1,arr2,arr3)，用于连接多个字符串，相当于arr1+arr2+arr3-->
+    <!--    substr(start,length)，从start位置开始，截取length个-->
+    <!--    slice(start,end)，从start位置开始，截取到end位置，end位置取不要到，（start，end，这俩都是索引号）-->
+    <!--    substring(start,end)，从start位置开始，截取到end位置，end位置取不要到，不接受负值，（start，end，这俩都是索引号）-->
+    <!--    replace('被替换的字符','替换为的字符')，只能替换一个字符-->
+    <!--    split('分隔符')，将字符串转换成数组-->
+    <!--    toUpperCase()，转换成大写-->
+    <!--    toLowerCase()，转换成小写-->
+    <script>
+        // substr(start,length)，从start位置开始，截取length个
+        let arr1 = '春风吹，战鼓擂';
+        console.log(arr1.substr(0, 2));
+        // replace('被替换的字符','替换为的字符')，只能替换一个字符
+        console.log(arr1.replace('春风', '秋风'));
+        console.log(arr1);
+        console.log(arr1.split('，'));
+        let arr2 = 'ASD';
+        console.log(arr2.toLowerCase());
+        let arr3 = 'asd';
+        console.log(arr3.toUpperCase());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

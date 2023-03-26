@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点（克隆节点）</title>
+    <!--    node.cloneNode()方法返回调用该方法的一个副本，也称为克隆节点（拷贝节点）-->
+    <!--    如果括号参数为空则或者false是浅拷贝，即克隆复制节点本身，不克隆里面得到子节点-->
+    <!--    浅拷贝，只复制标签不复制里面的内容-->
+    <!--    如果括号参数为true为深拷贝，克隆复制节点本身，克隆里面得到子节点-->
+    <!--    深拷贝，复制标签复制里面的内容-->
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<script>
+    let ul = document.querySelector('ul');
+    let node = ul.children[0].cloneNode();
+    let node1 = ul.children[0].cloneNode(true);
+    ul.appendChild(node)
+    ul.appendChild(node1)
+</script>
+</body>
+</html>

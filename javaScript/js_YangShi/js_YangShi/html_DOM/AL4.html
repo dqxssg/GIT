@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例4</title>
+    <style>
+        div {
+            width: 600px;
+            margin: 100px auto;
+        }
+
+        .message {
+            display: inline-block;
+            font-size: 30px;
+            color: #999;
+            background: url("../img/exclamation_symbol.png") no-repeat left center;
+            padding-left: 30px;
+        }
+
+        .wrong {
+            color: red;
+            background: url("../img/wrong_number.png") no-repeat left center;
+        }
+
+        .right {
+            color: green;
+            background: url("../img/check_the_number.png") no-repeat left center;
+        }
+    </style>
+</head>
+<body>
+<div class="register">
+    <input type="password" class="ipt">
+    <p class="message">请输入6-16位密码</p>
+</div>
+<script>
+    let ipt = document.querySelector('.ipt');
+    let message = document.querySelector('.message');
+    //失去焦点
+    ipt.onblur = function () {
+        if (this.value.length < 6 || this.value.length > 16) {
+            message.className = 'message wrong';
+            message.innerHTML = '请输入6~16位密码';
+        } else {
+            message.className = 'message right';
+            message.innerHTML = '正确';
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>（++）前置递增和后置递增的区别</title>
+    // ++a前置递增, 先运算 + 1, 再返回数值
+    // a++后置递增,先返回数值,再运算+1
+    <script>
+        var a = 10;//a=10
+        ++a;//a=11
+        var b = ++a + 10;//++a=12
+        alert(b);//b=22
+        var c = 10;//c=10
+        c++;//c=11
+        var d = c++ + 10;//c++=10,c=11
+        alert(d);//d=21
+        var e = 10;//e=10
+        e++;//e=11
+        var f = e++ + ++e;//e++=11,e=12,++e=13
+        alert(f);//f=24
+    </script>
+</head>
+<body>
+
+</body>
+</html>

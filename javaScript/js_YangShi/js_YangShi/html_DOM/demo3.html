@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementsByClassName();</title>
+
+</head>
+<body>
+<div>
+    <div class="box">盒子</div>
+    <div class="box">菏泽</div>
+    <div id="nav">
+        <ul>
+            <li>知否</li>
+            <li>粥否</li>
+        </ul>
+    </div>
+</div>
+<script>
+    // 有的版本不支持这种方法
+    // getElementsByClassName()，根据类的名字获取
+    // 返回是获取过来的元素对象的集合，以伪数组形式储存
+    let elementById = document.getElementsByClassName('box');
+    console.log(elementById);
+    //指定获取某个元素内部所有指定标签的子元素
+    let elementById1 = document.getElementById('ol');
+    let elementsByTagName = elementById1.getElementsByTagName('li');
+    console.log(elementsByTagName);
+</script>
+
+</body>
+</html>

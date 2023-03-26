@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点（三种动态创建元素的区别）</title>
+    <!--documnet.write()-->
+    <!--    直接将内容写入页面的内容流，但是文档执行完毕，则它会导致页面全部重绘-->
+    <!--    innerHTML比createElement效率高    -->
+    <!--element.innerHTML-->
+    <!--    将内容写入某个DOM节点，不会导致页面全部重绘-->
+    <!--    创建多个元素效率更高（不要拼接字符串，采取数组的形式拼接），结构复杂-->
+    <!--element.createElement()-->
+    <!--    创建多个元素效率稍微低一点，但是结构更清晰-->
+</head>
+<body>
+<button>点击</button>
+<p>abc</p>
+<div class="inner"></div>
+<div class="create"></div>
+<script>
+    let but = document.querySelector('button');
+    // 第一种
+    // but.onclick = function () {
+    //     document.write('<div>123</div>');
+    // }
+    // 第二种
+    let inner = document.querySelector('.inner');
+    for (let i = 0; i < 100; i++) {
+        inner.innerHTML += '<a href="javascript:;">哈哈哈\u3000</a>'
+    }
+    // 第三种
+    let crerate = document.querySelector('.create');
+    for (let i = 0; i < 100; i++) {
+        let a = document.querySelector('a');
+        crerate.appendChild(a);
+    }
+</script>
+</body>
+</html>

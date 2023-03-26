@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改元素内容</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .box {
+            width: 250px;
+            margin: 100px auto;
+        }
+
+        .box li {
+            float: left;
+            width: 24px;
+            height: 24px;
+            background-color: pink;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<script>
+    let all = document.querySelectorAll('li');
+    for (let i = 0; i < all.length; i++) {
+        if (i % 2 == 0) {
+            all[i].style.background = '../img/hd2.png';
+        } else {
+            all[i].style.background = '../img/hd1.png';
+        }
+    }
+</script>
+</body>
+</html>

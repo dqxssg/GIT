@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>['red','blue','red','green','reb']，求red出现位置和次数</title>
+    <script>
+        let arr = ['red', 'blue', 'red', 'green', 'red'];
+        let index = arr.indexOf('red');
+        let num = 0;
+        while (index !== -1) {
+            console.log(index)
+            num++;
+            index = arr.indexOf('red', index + 1);
+        }
+        console.log(num);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

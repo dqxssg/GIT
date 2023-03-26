@@ -1,0 +1,63 @@
+<!--操作元素-->
+<!--   操作元素内容-->
+<!--      innerText（非标准）-->
+<!--      innerHTML（标准）-->
+<!--   操作常见元素属性-->
+<!--   操作表单元素属性-->
+<!--   操作元素样式属性-->
+<!--      element.style-->
+<!--      className-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改元素内容</title>
+    <!--    控件名字.innerText=   不标准-->
+    <!--    不识别html标签-->
+    <!--    从起始位置到终止位置的内容，但它去除html标签，同时换行和空格也会去掉-->
+    <!--    控件名字.innerHTML=   标准-->
+    <!--    识别html标签-->
+    <!--    起始位置到终止位置的全部内容，包括html标签，同时保留换行和空格-->
+    <style>
+        div, p {
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+            color: #002fa7;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">显示系统当前时间</button>
+<div id="xs">某个时间</div>
+<p>显示</p>
+<p>
+    我是p标签
+    <span>我是span</span>
+</p>
+<div id="d"></div>
+<script>
+    let btn = document.getElementById('btn');
+    let xs = document.getElementById('xs');
+    btn.onclick = function () {
+        xs.innerText = getData_Time();
+    }
+
+    function getData_Time() {
+        let date = new Date();
+        let year = date.getFullYear(); //返回当前时间——年
+        let month = date.getMonth() + 1; //返回当前时间——月（比实际月份少一个月）
+        let day = date.getDate(); //返回当前时间——几号
+        let d = date.getDay(); //返回当前时间——星期（1表示周一，0表示周日）
+        let arr = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        return year + '-' + month + '-' + day + '\u3000' + arr[d];
+    }
+
+    let p = document.querySelector('p');
+    p.innerText = getData_Time();
+    let div = document.getElementById('d');
+    div.innerHTML = '<strong>今天是：</strong>2023';
+</script>
+</body>
+</html>

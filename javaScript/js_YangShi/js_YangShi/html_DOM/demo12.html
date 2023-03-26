@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单是否全选</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 100px auto 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #c0c0c0;
+        }
+
+        th, td {
+            border: 1px solid #d0d0d0;
+            color: #404060;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #09c;
+            font: bold 16px "微软雅黑";
+            color: #fff;
+        }
+
+        td {
+            font: 14px "微软雅黑";
+        }
+
+        tbody tr {
+            background-color: #f0f0f0;
+        }
+
+        tbody tr:hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="wrap">
+        <table>
+            <thead>
+            <tr>
+                <th>
+                    <input type="checkbox" id="j_cbAll">
+                </th>
+                <th>商品</th>
+                <th>价钱</th>
+            </tr>
+            </thead>
+            <thead id="j_tb">
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>iphone1</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>iphone2</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>iphone3</td>
+                <td>3000</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>iphone4</td>
+                <td>4000</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>iphone5</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>iphone6</td>
+                <td>6000</td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<script>
+    let j_cbAll = document.getElementById('j_cbAll'); //全选
+    let j_tb = document.getElementById('j_tb').getElementsByTagName('input'); //所有单选
+    j_cbAll.onclick = function () {
+        if (this.checked) {
+            for (let i = 0; i < j_tb.length; i++) {
+                j_tb[i].checked = true;
+            }
+        } else {
+            for (let i = 0; i < j_tb.length; i++) {
+                j_tb[i].checked = false;
+            }
+        }
+    }
+    for (let i = 0; i < j_tb.length; i++) {
+        j_tb[i].onclick = function () {
+            let flag = true;
+            for (let j = 0; j < j_tb.length; j++) {
+                if (!j_tb[j].checked) {
+                    flag = false;
+                    break;
+                }
+            }
+            j_cbAll.checked = flag;
+        }
+    }
+</script>
+
+</body>
+</html>

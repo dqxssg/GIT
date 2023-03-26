@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>换背景颜色</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url("../img/friend1.jpg") no-repeat center top;
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        .friend {
+            overflow: hidden;
+            margin: 100px auto;
+            background-color: #fff;
+            width: 192px;
+        }
+    </style>
+</head>
+<body>
+<ul class="friend">
+    <li><img src="../img/friend1.jpg" width="192" height="108.0"></li>
+    <li><img src="../img/friend2.jpg" width="192" height="108.0"></li>
+    <li><img src="../img/friend3.jpg" width="192" height="108.0"></li>
+    <li><img src="../img/friend4.jpg" width="192" height="108.0"></li>
+</ul>
+<script>
+    let imgs = document.querySelector('.friend').querySelectorAll('img');
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].onclick = function () {
+            document.body.style.backgroundImage = 'url(' + this.src + ')';
+        }
+    }
+
+</script>
+</body>
+</html>

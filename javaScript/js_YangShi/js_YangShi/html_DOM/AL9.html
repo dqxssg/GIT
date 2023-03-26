@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>innerHTML拼接效率测试</title>
+</head>
+<body>
+</body>
+<script>
+    function fn() {
+        let d1 = +new Date();
+        for (let i = 0; i < 1000; i++) {
+            document.body.innerHTML += '<div style="width:100px; height:2px; border:1px solid blue;"></div>';
+        }
+        let d2 = +new Date();
+        console.log(d2 - d1);
+    }
+
+    fn();
+</script>
+</html>

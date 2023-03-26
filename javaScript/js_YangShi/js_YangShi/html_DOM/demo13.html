@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取自定义属性值，更改自定义属性，移除自定义属性</title>
+    <!--方法一-->
+    <!--    获取内置属性值（元素本身自带的属性）-->
+    <!--方法二-->
+    <!--    主要获得自定义的属性（标准），-->
+    <!--方法三-->
+    <!--    设置内置属性-->
+    <!--方法四-->
+    <!--    主要设置自定义属性-->
+    <style>
+    </style>
+</head>
+<body>
+<div id="emo" index="1" class="data"></div>
+<script>
+    let emo = document.querySelector('div');
+    //方法一
+    // emo.id;
+    console.log("1" + emo.id);
+    //方法二
+    // emo.getAttribute('id');
+    console.log("2" + emo.getAttribute('id'));
+    // emo.getAttribute('index');
+    console.log("3" + emo.getAttribute('index'));
+    //方法三
+    emo.id = 'demo'
+    console.log("4" + emo.getAttribute('id'));
+    //方法四
+    emo.setAttribute('index', '2');
+    emo.setAttribute('class', 'rows');
+    console.log("5" + emo.getAttribute('index'));
+    //方法五
+    emo.removeAttribute('class');
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件高级（阻止默认行为）（e.type）</title>
+    <!--常见的属性和方法-->
+    <!--    事件对属性方法                       说明-->
+    <!--    e.target                           返回触发事件的对象（标准）-->
+    <!--    e.srcElement                       返回触发事件的对象（非标准，IE6-8使用）-->
+    <!--    e.type                             返回事件类型，比如：click（不带on）-->
+    <!--    e.cancelBubble                     阻止冒泡（非标准，IE6-8使用）-->
+    <!--    e.returnValue                      阻止默认事件（默认事件）（非标准，IE6-8使用，比如不让链接跳转）-->
+    <!--    e.preventDefault()                 阻止默认事件（默认事件）（标准，比如不让链接跳转）-->
+    <!--    e.stopPropagation()                阻止冒泡（标准）-->
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div>123</div>
+<a href="https://www.baidu.com/"> 百度</a>
+<form action="https://www.baidu.com/">
+    <input type="submit" value="提交" name="sub">
+</form>
+<script>
+    let div = document.querySelector('div');
+    div.addEventListener('click', fun);
+    div.addEventListener('mouseover', fun);
+    div.addEventListener('mouseout', fun);
+
+    function fun(e) {
+        console.log(e.type);
+    }
+
+    // 阻止默认事件（让链接不跳转或者提交按钮不提交）
+    // 利用return false也能阻止，默认行为，没有兼容问题，但是后面的代码就不再执行,只限于传统的注册方式
+    let a = document.querySelector('a');
+    a.addEventListener('click', function (e) {
+        e.preventDefault(); // DOM标准写法
+    })
+</script>
+</body>
+</html>

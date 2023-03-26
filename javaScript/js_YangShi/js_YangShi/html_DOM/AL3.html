@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例3</title>
+    <style>
+        input {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+<input type="text" value="手机">
+<script>
+    let text = document.querySelector('input');
+    //获得焦点
+    text.onfocus = function () {
+        if (text.value === '手机') {
+            text.value = '';
+        }
+        //获得焦点之后要把文本框里面的文字颜色加深
+        text.style.color='#000';
+    }
+    //失去焦点
+    text.onblur = function () {
+        if (text.value === '') {
+            text.value = '手机';
+        }
+        text.style.color='#999';
+    }
+</script>
+</body>
+</html>

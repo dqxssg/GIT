@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量</title>
+    <script>
+        // 声明变量
+        var age;
+        // 赋值
+        age = 18;
+        alert(age);
+        // 变量的初始化
+        var name = '张三';
+        alert(name);
+        // 输入用户名
+        var username = prompt('请输入用户名');
+        // 输出用户名
+        alert(username);
+        // 生命多个变量
+        var adress = '山东省',
+            email = '2022222222@qq.com';
+        // 只声明不赋值，结果时undefined
+        // 不声明不赋值直接使用，报错
+        // 不声明只赋值结果,显示赋值数据
+        <!--        命名规范-->
+        // 由字母（A_Za_z）、数字（0_9）、下划线(_)、美元($)组成
+        // 严格区分大小写
+        // 不能以数字开头
+        // 不能时关键字、保留字
+        // 变量名必须有意义
+        // 遵守驼峰命名法，首字母小写后面的单词首字母大写
+        <!--    转换类型-->
+        //八进制，数字前面加一个0表示八进制
+        var num1 = 010;
+        alert(num1)
+        // 十六进制，a-f、0-1，数字前面加0x表示十六进制
+        var num2 = 0x10;
+        alert(num2)
+        // 最大值
+        alert(Number.MAX_VALUE)
+        // 最小值
+        alert(Number.MIN_VALUE)
+        // 代表无穷大
+        alert(Infinity)
+        // 代表无穷小
+        alert(-Infinity)
+        // 代表一个非数值（Not a number）
+        alert(NaN)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

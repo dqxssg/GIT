@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+    <!--    事件三要素：事件源、事件类型、事件处理程序|-->
+    <!--    1、事件源：事件被触发的对象-->
+    <!--    2、事件类型：如何触发什么时候触发-->
+    <!--    3、事件处理程序：通过一个函数赋值的方式-->
+</head>
+<body>
+<button id="but">我是一个按钮</button>
+<script>
+    // 事件源：事件被触发的对象
+    let btn = document.getElementById('but');
+    // 事件类型：如何触发什么时候触发
+    // 事件处理程序：通过一个函数赋值的方式
+    btn.onclick = function () {
+        alert('我是弹窗');
+    }
+</script>
+
+</body>
+</html>

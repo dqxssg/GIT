@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点（兄弟节点）</title>
+    <!--nextSibling-->
+    <!--    返回当前元素的下一个兄弟节点，找不到返回null（包含所有节点）-->
+    <!--previousSibling-->
+    <!--    返回当前元素的上一个兄弟节点，找不到返回null（包含所有节点）-->
+
+    <!--以下两种方法有不兼容问题需要ie9以上-->
+    <!--    nextElementSibling，找到下一个元素节点，找不到返回null-->
+    <!--    previousElementSibling，找到上一个元素节点，找不到返回null-->
+    <!--解决办法：（封装一个方法）-->
+    <!--    function getNextElementSibling(element){-->
+    <!--        let el=element;-->
+    <!--        while(el=el.nextSibling){-->
+    <!--            if(el.nodeType===1){-->
+    <!--                return el;-->
+    <!--            }-->
+    <!--        }-->
+    <!--        return null;-->
+    <!--    }-->
+
+</head>
+<body>
+<div>我是div</div>
+<span>我是span</span>
+<script>
+    let divElement = document.querySelector('div');
+    // nextSibling找到下一个兄弟节点，包括元素节点、文本节点等
+    let nextSibling = divElement.nextSibling;
+    console.log(nextSibling);
+    // previousSibling找到上一个兄弟节点，包括元素节点、文本节点等
+    let previousSibling = divElement.previousSibling;
+    console.log(previousSibling);
+    // nextElementSibling找到下一个元素节点，找不到返回null
+    let nextElementSibling = divElement.nextElementSibling;
+    console.log(nextElementSibling);
+    // nextElementSibling找到上一个元素节点，找不到返回null
+    let previousElementSibling = divElement.previousElementSibling;
+    console.log(previousElementSibling);
+</script>
+</body>
+</html>

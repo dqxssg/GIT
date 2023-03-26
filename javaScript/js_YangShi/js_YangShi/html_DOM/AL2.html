@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>案例2</title>
+    <style>
+        .box {
+            position: relative;
+            width: 400px;
+            border-bottom: 1px solid #ccc;
+            margin: 100px auto;
+        }
+
+        .box input {
+            width: 370px;
+            height: 30px;
+            border: 0;
+            outline: none;
+        }
+
+        .box img {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            width: 24px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <label for="">
+        <img src="../img/hd1.png" alt="" id="image">
+    </label>
+    <input type="password" name="" id="psw">
+</div>
+<script>
+    let image = document.getElementById('image');
+    let psw = document.getElementById('psw');
+    let flag = 0;
+    image.onclick = function () {
+        if (flag == 0) {
+            image.src = '../img/hd2.png';
+            psw.type = 'text';
+            flag++;
+        } else {
+            image.src = '../img/hd1.png';
+            psw.type = 'password';
+            flag--;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改元素内容</title>
+    <!--    className-->
+    <!--    注意-->
+    <!--    如果样式修改较多，可以采用类名的方式进行修改-->
+    <!--    class是一个保留字，使用className来操作元素类名属性-->
+    <!--    className会直接更改元素属性，会覆盖原本的类名，如果保留原本的类名写成（className(原本的类名 新的类名)）中间加一个空格-->
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .change {
+            color: #fff;
+            font-size: 25px;
+            margin-top: 100px;
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+<div>文本</div>
+<script>
+    let element = document.querySelector('div');
+    element.onclick = function () {
+        //让当前的元素类名更改为change
+        this.className = 'change';
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>禁止选中文字和禁止右键菜单</title>
+    <!--    鼠标点击                                          触发条件-->
+    <!--    onclick                                          鼠标点击左键触发-->
+    <!--    onmouseover                                      鼠标经过出发-->
+    <!--    onmouseout                                       鼠标离开触发-->
+    <!--    onfocus                                          获得鼠标焦点触发-->
+    <!--    onblur                                           失去鼠标焦点触发-->
+    <!--    onmousemove                                      鼠标移动触发-->
+    <!--    onmouseup                                        鼠标弹起触发-->
+    <!--    onmousedown                                      鼠标按下触发-->
+    <!--禁止鼠标右键菜单-->
+    <!--    contextmenu主要控制应该何时显示上下文菜单，只要用于程序员取消默认的上下文菜单-->
+    <!--        document.addEventListener('contextmenu',function(e){-->
+    <!--            e.preventDefault();-->
+    <!--        })-->
+    <!--禁止选中（selectstart开始选中）-->
+    <!--        document.addEventListener('selectstart',function(e){-->
+    <!--            e.preventDefault();-->
+    <!--        })-->
+    <style>
+        .father {
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: pink;
+            text-align: center;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            background-color: purple;
+            line-height: 200px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+我是不愿意被复制的文字
+<script>
+    // 禁用右键菜单
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+    // 禁止选中
+    document.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+    })
+</script>
+</body>
+</html>

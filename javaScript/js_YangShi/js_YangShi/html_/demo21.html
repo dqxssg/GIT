@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串对象，根据字符返回位置</title>
+    <script>
+        let arr = '春风吹，战鼓擂，改革春风吹满地';
+        console.log(arr.indexOf('吹'))
+        console.log(arr.indexOf('吹', 3))//里面的3是第一个吹后面的索引，跳过第一个，去查找第二个
+        console.log(arr.lastIndexOf('吹'))
+        console.log(arr.lastIndexOf('吹', 3))//里面的3是最后一个吹前面的索引，跳过最后一个，去查找第二个
+        console.log('------------------')
+        //练习
+        let arr1 = "asdsdfdfgasdasdasd";
+        let index = arr1.indexOf('a');
+        let num = 0;
+        while (index !== -1) {
+            index = arr1.indexOf('a', index + 1);
+            num++;
+            console.log(index);
+        }
+        console.log(num);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>执行事件步骤</title>
+    <!--    onclick        当单击鼠标时运行脚本-->
+    <!--    ondblclick     当双击鼠标时运行脚本-->
+    <!--    ondrag         当拖动元素时运行脚本-->
+    <!--    ondragend      当拖动操作结束时运行脚本-->
+    <!--    ondragenter    当元素被拖动至有效的拖放目标时运行脚本-->
+    <!--    ondragleave    当元素离开有效拖放目标时运行脚本-->
+    <!--    ondragover     当元素被拖动至有效拖放目标上方时运行脚本-->
+    <!--    ondragstart    当拖动操作开始时运行脚本-->
+    <!--    ondrop         当被拖动元素正在被拖放时运行脚本-->
+    <!--    onmousedown    当按下鼠标按钮时运行脚本-->
+    <!--    onmousemove    当鼠标指针移动时运行脚本-->
+    <!--    onmouseout     当鼠标指针移出元素时运行脚本-->
+    <!--    onmouseover    当鼠标指针移至元素之上时运行脚本-->
+    <!--    onmouseup      当松开鼠标按钮时运行脚本-->
+    <!--    onmousewheel   当转动鼠标滚轮时运行脚本-->
+    <!--    onscroll       当滚动元素滚动元素的滚动条时运行脚本-->
+</head>
+<body>
+<div>
+    123
+</div>
+<script>
+    //获取事件源
+    let div = document.querySelector('div');
+    //绑定事件
+    //添加事件处理程序
+    div.onclick = function () {
+        alert('---');
+    }
+</script>
+
+</body>
+</html>
